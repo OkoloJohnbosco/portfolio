@@ -7,6 +7,8 @@ import {
   useColorMode,
   Button,
 } from "@chakra-ui/react";
+import Icon from "../icon";
+import { BsSun, BsMoon } from "react-icons/bs";
 
 function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -24,14 +26,12 @@ function Navbar() {
           <Text>About me</Text>
         </HStack>
 
-        <Button
-          w="max-content"
+        <IconButton
+          aria-label="color mode toggle button"
           onClick={toggleColorMode}
-          fontWeight="normal"
-          size="lg"
         >
-          Toggle {colorMode === "light" ? "Dark" : "Light"}
-        </Button>
+          <Icon iconComp={colorMode === "light" ? BsMoon : BsSun} />
+        </IconButton>
       </HStack>
     </Stack>
   );
