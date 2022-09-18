@@ -19,25 +19,23 @@ function TimeLine({ num, title, text, isLast = false }: TimeLineProps) {
       position="relative"
     >
       <Box
-        h={16}
-        w={16}
-        bg="#E3F2F9"
+        h={5}
+        w={5}
+        bg="whiteAlpha.900"
         display="grid"
         placeItems="center"
         rounded="full"
         position="absolute"
         left={0}
-        top={7}
+        top={0}
         transform="translate(-50%, -50%)"
-      >
-        <Heading fontSize="xl" color="blue.900">
-          {num}
-        </Heading>
-      </Box>
-      <Heading color="brand.100" mt={-10} fontSize="2xl" as="h3">
-        {title}
-      </Heading>
-      <Text color="blue.600">{text}</Text>
+      ></Box>
+      <Stack spacing={4}>
+        <Text mt={-8} fontSize="xl" as="h3">
+          {title}
+        </Text>
+        <Text>{text}</Text>
+      </Stack>
     </Stack>
   );
 }
