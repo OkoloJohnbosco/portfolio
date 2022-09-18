@@ -1,7 +1,9 @@
 import React from "react";
-import { Stack, SimpleGrid, Heading } from "@chakra-ui/react";
+import { Box, Stack, SimpleGrid, Heading } from "@chakra-ui/react";
 import TimeLine from "../timeline";
 import Section from "../section";
+import images from "../../constant/images";
+import Image from "next/image";
 
 function Experience() {
   return (
@@ -19,8 +21,27 @@ function Experience() {
           Skills & Experience
         </Heading>
         <SimpleGrid columns={2} columnGap={10} py={5}>
-          <Stack ml="auto" w="full" maxW="450px" bg="teal">
-            <SimpleGrid columns={4} columnGap={6} rowGap={6}></SimpleGrid>
+          <Stack ml="auto" w="full" maxW="450px">
+            <SimpleGrid columns={4} columnGap={6} rowGap={8}>
+              {[
+                images.css,
+                images.git,
+                images.graphql,
+                images.typescript,
+                images.javascript,
+                images.sass,
+                images.redux,
+                images.python,
+                images.react,
+                images.html,
+                images.mu5,
+                images.node,
+              ].map((img) => (
+                <Box h={20} w={20} bg="rgba(0,0,0,.3)" p={5} rounded="full">
+                  <Image src={img} alt="kdkdk" />
+                </Box>
+              ))}
+            </SimpleGrid>
           </Stack>
 
           <Stack spacing={6}>
