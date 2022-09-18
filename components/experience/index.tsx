@@ -18,27 +18,41 @@ function Experience() {
         >
           Skills & Experience
         </Heading>
-        <SimpleGrid columns={2}>
-          <Stack>
-            <p>Lmao</p>
+        <SimpleGrid columns={2} columnGap={10} py={5}>
+          <Stack ml="auto" w="full" maxW="450px" bg="teal">
+            <SimpleGrid columns={4} columnGap={6} rowGap={6}></SimpleGrid>
           </Stack>
 
           <Stack spacing={6}>
             <TimeLine
-              title="Create an account"
-              text="Sign up for an account with your name, email and phone number."
-              num="01"
+              title="Fixbot Inc"
+              time="Feb 2022 – Present"
+              text="Maintained effective communication with the backend team to ensure that our frontend product was in sync with the APIs provided."
+              jobTitle="Frontend Software Developer"
             />
             <TimeLine
-              title="Top up Airtime and Pay Bills"
-              text="Using your debit card, bank account, USSD, QR Code, pay your bills."
-              num="02"
+              time="Sept 2021 – Feb 2022"
+              title="Rhics Technology"
+              text={`
+              Significantly enhanced the frontend resilience of the admin dashboard which reduced app crashes in production by 80% by writing component and integration tests using Jest and React testing library.
+              `}
+              jobTitle="Frontend Software Developer"
             />
             <TimeLine
-              title="Make transactions"
-              text="Sit back, relax & make transaction with ease all day, everyday."
-              num="03"
+              time="Feb 2021 – Aug 2021"
+              title="BunchPay Limited"
+              text={`
+              Added accessible forms to the wallet transactions form which accelerated data entry by 100% using React and Formik.
+              Upgraded the stability of the Bunchpay dashboard application by fixing memory leaks using React hooks.
+              `}
+              jobTitle="Frontend Software Developer"
+            />
+            <TimeLine
+              time="Aug 2020 – Nov 2020"
+              title="Teenah Stores"
+              jobTitle="Frontend Engineer Intern"
               isLast
+              text="Participated in coding activities, maintaining integrity of program logic and coding and developing and updating existing systems to increase task success rate by 15%."
             />
           </Stack>
         </SimpleGrid>

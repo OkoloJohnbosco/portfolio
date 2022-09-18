@@ -58,7 +58,7 @@ function Header() {
                   p={0}
                   w="min-content"
                   h="min-content"
-                  colorScheme="green"
+                  colorScheme="teal"
                   pb={2}
                   borderBottom="2px solid"
                   borderColor="green.600"
@@ -70,24 +70,19 @@ function Header() {
           </Stack>
           <Stack alignItems="center" position="relative">
             <Box position="absolute" top={-10}>
-              <Badge
-                colorScheme="green"
-                p={2}
-                fontWeight="normal"
-                fontSize="sm"
-              >
+              <Badge colorScheme="teal" p={2} fontWeight="normal" fontSize="sm">
                 Frontend Software Engineer
               </Badge>
             </Box>
             <Box
-              h="96"
+              h={96}
               w={96}
               rounded="full"
               bg="rgba(0,0,0,.3)"
               position="absolute"
               top={20}
             />
-            <Box textAlign="center">
+            <Box textAlign="center" position="relative" top={10}>
               <Image src={profileImg} alt="" placeholder="blur" />
             </Box>
           </Stack>

@@ -10,7 +10,8 @@ function Socials() {
       <Tooltip hasArrow placement="top" py={2} px={4} rounded={4} label="lmao">
         <IconButton
           size="sm"
-          colorScheme="green"
+          colorScheme="teal"
+          variant="outline"
           rounded="full"
           aria-label="color mode toggle button"
         >
@@ -21,7 +22,8 @@ function Socials() {
       <Tooltip hasArrow placement="top" py={2} px={4} rounded={4} label="lmao">
         <IconButton
           size="sm"
-          colorScheme="green"
+          variant="outline"
+          colorScheme="teal"
           rounded="full"
           aria-label="color mode toggle button"
         >
@@ -32,7 +34,8 @@ function Socials() {
       <Tooltip hasArrow placement="top" py={2} px={4} rounded={4} label="lmao">
         <IconButton
           size="sm"
-          colorScheme="green"
+          variant="outline"
+          colorScheme="teal"
           rounded="full"
           aria-label="color mode toggle button"
         >

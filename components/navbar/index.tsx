@@ -29,6 +29,7 @@ function Navbar() {
           </HStack>
 
           <IconButton
+            colorScheme="teal"
             aria-label="color mode toggle button"
             onClick={toggleColorMode}
           >
