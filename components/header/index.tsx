@@ -1,5 +1,12 @@
 import React from "react";
-import { Box, Stack, Text, SimpleGrid, Heading } from "@chakra-ui/react";
+import {
+  Button,
+  Box,
+  Stack,
+  Text,
+  SimpleGrid,
+  Heading,
+} from "@chakra-ui/react";
 import Section from "../section";
 import Image from "next/image";
 import profileImg from "../../public/images/profile.png";
@@ -12,7 +19,7 @@ function Header() {
         <Socials />
         <SimpleGrid columns={3} columnGap={4} alignItems="center">
           <Stack>
-            <Stack>
+            <Stack spacing={3}>
               <Stack spacing={0}>
                 <Heading fontSize="xl">Hello, I'm</Heading>
                 <Heading fontSize="3rem">Johnbosco</Heading>
@@ -22,6 +29,22 @@ function Header() {
                 products. I love collaboration and making helpful products that
                 connects prople.
               </Text>
+              <Stack>
+                <Button
+                  variant="ghost"
+                  fontWeight="normal"
+                  rounded={0}
+                  p={0}
+                  w="min-content"
+                  h="min-content"
+                  colorScheme="teal"
+                  pb={2}
+                  borderBottom="2px solid"
+                  borderColor="teal.600"
+                >
+                  LET'S CHAT!
+                </Button>
+              </Stack>
             </Stack>
           </Stack>
           <Stack alignItems="center">
