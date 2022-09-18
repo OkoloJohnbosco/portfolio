@@ -48,6 +48,7 @@ function Header() {
                   pl={6}
                   bg="rgba(0,0,0,.2)"
                   color="gray.300"
+                  maxW="400px"
                 >
                   Frontend Software Developer with 4+ years of experience
                   building products. I love collaboration and making helpful

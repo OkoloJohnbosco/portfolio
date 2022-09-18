@@ -1,10 +1,10 @@
 import React from "react";
-import { Heading, Textarea, Stack, Input } from "@chakra-ui/react";
+import { Button, Heading, Textarea, Stack, Input } from "@chakra-ui/react";
 import Section from "../section";
 
 function Contact() {
   return (
-    <Stack>
+    <Stack pt={10}>
       <Section maxW="700px">
         <Heading
           textAlign="center"
@@ -43,6 +43,17 @@ function Contact() {
             border="1px solid"
             _focus={{ borderColor: "blue.50" }}
           />
+        </Stack>
+        <Stack py={6} alignItems="center">
+          <Button
+            size="lg"
+            fontWeight="normal"
+            colorScheme="teal"
+            w="max-content"
+            fontSize="md"
+          >
+            Send Message
+          </Button>
         </Stack>
       </Section>
     </Stack>
