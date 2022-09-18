@@ -20,9 +20,24 @@ function Experience() {
         >
           Skills & Experience
         </Heading>
-        <SimpleGrid columns={2} columnGap={10} py={5}>
-          <Stack ml="auto" w="full" maxW="450px">
-            <SimpleGrid columns={4} columnGap={6} rowGap={8}>
+        <SimpleGrid
+          columns={{ base: 1, md: 2 }}
+          rowGap={16}
+          columnGap={10}
+          py={5}
+        >
+          <Stack
+            // mx={{ base: "auto", md: "initial" }}
+            ml={{ base: "initial", md: "auto" }}
+            w="full"
+            maxW="450px"
+          >
+            <SimpleGrid
+              columns={4}
+              columnGap={6}
+              rowGap={8}
+              alignSelf={{ base: "center", md: "initial" }}
+            >
               {[
                 images.css,
                 images.git,
@@ -51,7 +66,7 @@ function Experience() {
             </SimpleGrid>
           </Stack>
 
-          <Stack spacing={6}>
+          <Stack spacing={6} alignItems={{ base: "center", md: "initial" }}>
             <TimeLine
               title="Fixbot Inc"
               time="Feb 2022 – Present"

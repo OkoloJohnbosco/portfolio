@@ -19,7 +19,11 @@ function Header() {
     <Stack py={10} pt={16}>
       <Section position="relative" minH="calc(100vh - 180px)">
         <Socials />
-        <SimpleGrid columns={3} columnGap={4} alignItems="center">
+        <SimpleGrid
+          columns={{ base: 1, md: 3 }}
+          columnGap={4}
+          alignItems="center"
+        >
           <Stack position="relative">
             <Stack spacing={3}>
               <Stack
@@ -93,9 +97,7 @@ function Header() {
             columnGap={3}
             rowGap={3}
           >
-            <Box h="14" w={14} rounded="full" bg="rgba(0,0,0,.3)" />
-            <Box h="14" w={14} rounded="full" bg="rgba(0,0,0,.3)" />
-            <Box h="14" w={14} rounded="full" bg="rgba(0,0,0,.3)" />
+            {/* <Box h="14" w={14} rounded="full" bg="rgba(0,0,0,.3)" /> */}
           </HStack>
         </SimpleGrid>
       </Section>

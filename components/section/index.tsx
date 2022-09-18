@@ -3,7 +3,7 @@ import React from "react";
 
 function Section({ children, ...props }: BoxProps) {
   return (
-    <Box maxW="1400px" alignSelf="center" mx="auto" w="96%" {...props}>
+    <Box maxW="1400px" alignSelf="center" mx="auto" w="92%" {...props}>
       {children}
     </Box>
   );
