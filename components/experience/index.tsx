@@ -35,7 +35,7 @@ function Experience() {
                 images.react,
                 images.html,
                 images.mu5,
-                images.node,
+                images.tailwind,
               ].map((img) => (
                 <Box h={20} w={20} bg="rgba(0,0,0,.3)" p={5} rounded="full">
                   <Image src={img} alt="kdkdk" />
@@ -49,7 +49,7 @@ function Experience() {
               title="Fixbot Inc"
               time="Feb 2022 – Present"
               text="Maintained effective communication with the backend team to ensure that our frontend product was in sync with the APIs provided."
-              jobTitle="Frontend Software Developer"
+              jobTitle="Frontend Software Engineer"
             />
             <TimeLine
               time="Sept 2021 – Feb 2022"
@@ -57,7 +57,7 @@ function Experience() {
               text={`
               Significantly enhanced the frontend resilience of the admin dashboard which reduced app crashes in production by 80% by writing component and integration tests using Jest and React testing library.
               `}
-              jobTitle="Frontend Software Developer"
+              jobTitle="Frontend Software Engineer"
             />
             <TimeLine
               time="Feb 2021 – Aug 2021"
@@ -66,7 +66,7 @@ function Experience() {
               Added accessible forms to the wallet transactions form which accelerated data entry by 100% using React and Formik.
               Upgraded the stability of the Bunchpay dashboard application by fixing memory leaks using React hooks.
               `}
-              jobTitle="Frontend Software Developer"
+              jobTitle="Frontend Software Engineer"
             />
             <TimeLine
               time="Aug 2020 – Nov 2020"
