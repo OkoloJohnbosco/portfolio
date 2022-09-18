@@ -96,12 +96,6 @@ function Header() {
             <Box h="14" w={14} rounded="full" bg="rgba(0,0,0,.3)" />
             <Box h="14" w={14} rounded="full" bg="rgba(0,0,0,.3)" />
             <Box h="14" w={14} rounded="full" bg="rgba(0,0,0,.3)" />
-            <Box h="14" w={14} rounded="full" bg="rgba(0,0,0,.3)" />
-            <Box h="14" w={14} rounded="full" bg="rgba(0,0,0,.3)" />
-            <Box h="14" w={14} rounded="full" bg="rgba(0,0,0,.3)" />
-            <Box h="14" w={14} rounded="full" bg="rgba(0,0,0,.3)" />
-            <Box h="14" w={14} rounded="full" bg="rgba(0,0,0,.3)" />
-            <Box h="14" w={14} rounded="full" bg="rgba(0,0,0,.3)" />
           </HStack>
         </SimpleGrid>
       </Section>

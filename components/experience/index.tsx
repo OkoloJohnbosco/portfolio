@@ -37,7 +37,14 @@ function Experience() {
                 images.mu5,
                 images.tailwind,
               ].map((img) => (
-                <Box h={20} w={20} bg="rgba(0,0,0,.3)" p={5} rounded="full">
+                <Box
+                  h={20}
+                  w={20}
+                  bg="rgba(0,0,0,.3)"
+                  // bg="green.100"
+                  p={5}
+                  rounded="full"
+                >
                   <Image src={img} alt="kdkdk" />
                 </Box>
               ))}
