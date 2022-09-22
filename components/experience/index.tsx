@@ -26,12 +26,7 @@ function Experience() {
           columnGap={10}
           py={5}
         >
-          <Stack
-            // mx={{ base: "auto", md: "initial" }}
-            ml={{ base: "initial", md: "auto" }}
-            w="full"
-            maxW="450px"
-          >
+          <Stack mx={{ base: "auto", md: "auto 0" }} w="full" maxW="450px">
             <SimpleGrid
               columns={4}
               columnGap={6}
