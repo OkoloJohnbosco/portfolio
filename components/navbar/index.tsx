@@ -6,10 +6,13 @@ import {
   Text,
   useColorMode,
   useColorModeValue,
+  Box,
 } from "@chakra-ui/react";
 import Icon from "../icon";
 import { BsSun, BsMoon } from "react-icons/bs";
 import Section from "../section";
+import Image from "next/image";
+import logoImg from "../../public/images/logo.png";
 
 function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -28,9 +31,9 @@ function Navbar() {
     >
       <Section>
         <HStack w="full" justifyContent="space-between">
-          <Stack>
-            <Text>Johnbosc</Text>
-          </Stack>
+          <Box maxW="90px">
+            <Image src={logoImg} alt="" placeholder="blur" />
+          </Box>
           <HStack spacing={4}>
             <a href="#home">
               <Text>Home</Text>
