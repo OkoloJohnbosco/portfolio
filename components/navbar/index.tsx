@@ -17,21 +17,20 @@ import logoImg from "../../public/images/logo.png";
 function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
   const bgColor = useColorModeValue("#ffffff", "#1a202c");
+  const fake = useColorModeValue("#ffffff", "blue.100");
+  const borderColor = useColorModeValue("gray.300", "gray.600");
 
   return (
     <Stack
       py={3}
       borderBottom="1px solid"
-      borderColor="gray.300"
-      position="sticky"
-      top={0}
-      left={0}
+      borderColor={borderColor}
       bg={bgColor}
       zIndex="20"
     >
       <Section>
         <HStack w="full" justifyContent="space-between">
-          <Box maxW="80px">
+          <Box maxW="80px" bg={fake} h="50px">
             <Image src={logoImg} alt="" placeholder="blur" />
           </Box>
           <HStack spacing={4}>

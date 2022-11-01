@@ -3,11 +3,9 @@ import {
   Button,
   Box,
   Stack,
-  HStack,
   Text,
   SimpleGrid,
   Heading,
-  Badge,
   useColorModeValue,
 } from "@chakra-ui/react";
 import Section from "../section";

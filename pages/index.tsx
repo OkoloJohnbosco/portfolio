@@ -19,9 +19,9 @@ export default function Home() {
         <Header />
         <Experience />
         <Contact />
-        <Stack w="full" alignItems="center">
+        {/* <Stack w="full" alignItems="center">
           <Tabs />
-        </Stack>
+        </Stack> */}
       </Stack>
     </>
   );
