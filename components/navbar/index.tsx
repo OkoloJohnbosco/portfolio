@@ -20,7 +20,7 @@ function Navbar() {
 
   return (
     <Stack
-      py={5}
+      py={3}
       borderBottom="1px solid"
       borderColor="gray.300"
       position="sticky"
@@ -31,7 +31,7 @@ function Navbar() {
     >
       <Section>
         <HStack w="full" justifyContent="space-between">
-          <Box maxW="90px">
+          <Box maxW="80px">
             <Image src={logoImg} alt="" placeholder="blur" />
           </Box>
           <HStack spacing={4}>
