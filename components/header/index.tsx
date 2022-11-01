@@ -11,8 +11,6 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import Section from "../section";
-import Image from "next/image";
-import profileImg from "../../public/images/profile.png";
 import Socials from "../socials";
 
 function Header() {
@@ -21,7 +19,7 @@ function Header() {
 
   return (
     <Stack py={10} pt={16} id="home">
-      <Section position="relative" minH="calc(100vh - 180px)">
+      <Section position="relative">
         <Socials />
         <SimpleGrid
           columns={{ base: 1, lg: 2 }}
@@ -38,7 +36,8 @@ function Header() {
                 bg={bgColor}
                 color={textColor}
                 position="absolute"
-                top={-20}
+                top={{ base: -10, lg: -20 }}
+                shadow="sm"
                 right={0}
               >
                 <Heading fontSize="lg">Hello, I'm</Heading>
@@ -76,18 +75,24 @@ function Header() {
               </Stack>
             </Stack>
           </Stack>
-          <Stack alignItems="center" position="relative">
+          <Stack
+            alignItems="center"
+            position="relative"
+            display={{ base: "none", lg: "flex" }}
+          >
             <Box
               h={96}
               w={96}
               rounded="full"
-              bg="rgba(0,0,0,.3)"
+              bg={bgColor}
               position="absolute"
-              top={20}
+              top={10}
             />
-            <Box textAlign="center" position="relative" top={10}>
-              <Image src={profileImg} alt="" placeholder="blur" />
-            </Box>
+
+            <Stack h="400px"></Stack>
+            {/* <Box textAlign="center" position="relative" top={10} h="300px"> */}
+            {/* <Image src={profileImg} alt="" placeholder="blur" /> */}
+            {/* </Box> */}
           </Stack>
         </SimpleGrid>
       </Section>

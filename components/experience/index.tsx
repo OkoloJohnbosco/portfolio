@@ -14,8 +14,8 @@ import Image from "next/image";
 function Experience() {
   const value = useColorModeValue("gray.100", "rgba(0,0,0,0.3)");
   return (
-    <Stack pt={20}>
-      <Section id="experience">
+    <Stack pt={20} id="experience">
+      <Section>
         <Heading
           textAlign="center"
           pb={2}

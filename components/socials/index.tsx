@@ -7,9 +7,9 @@ import { FaLinkedinIn } from "react-icons/fa";
 function Socials() {
   return (
     <SimpleGrid
-      columns={{ base: 1, md: 3 }}
+      columns={{ base: 1, lg: 3 }}
       position="absolute"
-      bottom={2}
+      bottom={{ base: -40, lg: 2 }}
       spacing={4}
       left={0}
       zIndex="docked"

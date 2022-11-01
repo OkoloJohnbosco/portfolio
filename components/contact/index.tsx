@@ -4,7 +4,7 @@ import Section from "../section";
 
 function Contact() {
   return (
-    <Stack pt={10} id="contact-us">
+    <Stack pt={20} id="contact-us">
       <Section maxW="700px">
         <Heading
           textAlign="center"

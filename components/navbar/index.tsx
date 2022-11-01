@@ -5,7 +5,7 @@ import {
   IconButton,
   Text,
   useColorMode,
-  Button,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import Icon from "../icon";
 import { BsSun, BsMoon } from "react-icons/bs";
@@ -13,9 +13,19 @@ import Section from "../section";
 
 function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
+  const bgColor = useColorModeValue("#ffffff", "#1a202c");
 
   return (
-    <Stack py={6} borderBottom="1px solid" borderColor="gray.300">
+    <Stack
+      py={5}
+      borderBottom="1px solid"
+      borderColor="gray.300"
+      position="sticky"
+      top={0}
+      left={0}
+      bg={bgColor}
+      zIndex="20"
+    >
       <Section>
         <HStack w="full" justifyContent="space-between">
           <Stack>
@@ -29,7 +39,7 @@ function Navbar() {
               <Text>Works</Text>
             </a>
             <a href="#experience">
-              <Text>Service</Text>
+              <Text>Projects</Text>
             </a>
             <a href="#contact-us">
               <Text>Contact me</Text>
