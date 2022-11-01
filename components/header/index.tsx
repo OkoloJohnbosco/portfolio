@@ -8,6 +8,7 @@ import {
   SimpleGrid,
   Heading,
   Badge,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import Section from "../section";
 import Image from "next/image";
@@ -15,12 +16,15 @@ import profileImg from "../../public/images/profile.png";
 import Socials from "../socials";
 
 function Header() {
+  const bgColor = useColorModeValue("gray.100", "rgba(0,0,0,0.3)");
+  const textColor = useColorModeValue("gray.700", "gray.300");
+
   return (
     <Stack py={10} pt={16}>
       <Section position="relative" minH="calc(100vh - 180px)">
         <Socials />
         <SimpleGrid
-          columns={{ base: 1, md: 3 }}
+          columns={{ base: 1, lg: 2 }}
           columnGap={4}
           alignItems="center"
         >
@@ -31,8 +35,8 @@ function Header() {
                 rounded="8"
                 p={4}
                 pl={6}
-                bg="rgba(0,0,0,.2)"
-                color="gray.300"
+                bg={bgColor}
+                color={textColor}
                 position="absolute"
                 top={-20}
                 right={0}
@@ -46,8 +50,8 @@ function Header() {
                   rounded="8"
                   p={4}
                   pl={6}
-                  bg="rgba(0,0,0,.2)"
-                  color="gray.300"
+                  bg={bgColor}
+                  color={textColor}
                   maxW="400px"
                 >
                   Frontend Software Developer with 4+ years of experience
@@ -58,7 +62,6 @@ function Header() {
               <Stack>
                 <Button
                   variant="ghost"
-                  fontWeight="normal"
                   rounded={0}
                   p={0}
                   w="min-content"
@@ -74,11 +77,6 @@ function Header() {
             </Stack>
           </Stack>
           <Stack alignItems="center" position="relative">
-            <Box position="absolute" top={-10}>
-              <Badge colorScheme="teal" p={2} fontWeight="normal" fontSize="sm">
-                Frontend Software Engineer
-              </Badge>
-            </Box>
             <Box
               h={96}
               w={96}
@@ -91,15 +89,6 @@ function Header() {
               <Image src={profileImg} alt="" placeholder="blur" />
             </Box>
           </Stack>
-          <HStack
-            alignItems="end"
-            flexWrap="wrap"
-            spacing={0}
-            columnGap={3}
-            rowGap={3}
-          >
-            {/* <Box h="14" w={14} rounded="full" bg="rgba(0,0,0,.3)" /> */}
-          </HStack>
         </SimpleGrid>
       </Section>
     </Stack>

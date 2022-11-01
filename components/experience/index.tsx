@@ -1,11 +1,18 @@
 import React from "react";
-import { Box, Stack, SimpleGrid, Heading } from "@chakra-ui/react";
+import {
+  Box,
+  Stack,
+  SimpleGrid,
+  Heading,
+  useColorModeValue,
+} from "@chakra-ui/react";
 import TimeLine from "../timeline";
 import Section from "../section";
 import images from "../../constant/images";
 import Image from "next/image";
 
 function Experience() {
+  const value = useColorModeValue("gray.100", "rgba(0,0,0,0.3)");
   return (
     <Stack pt={20}>
       <Section>
@@ -50,7 +57,7 @@ function Experience() {
                 <Box
                   h={20}
                   w={20}
-                  bg="rgba(0,0,0,.3)"
+                  bg={value}
                   // bg="green.100"
                   p={5}
                   rounded="full"

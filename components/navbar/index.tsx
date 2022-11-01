@@ -32,8 +32,13 @@ function Navbar() {
             colorScheme="teal"
             aria-label="color mode toggle button"
             onClick={toggleColorMode}
+            rounded="full"
+            size="sm"
           >
-            <Icon iconComp={colorMode === "light" ? BsMoon : BsSun} />
+            <Icon
+              iconComp={colorMode === "light" ? BsMoon : BsSun}
+              boxSize={4}
+            />
           </IconButton>
         </HStack>
       </Section>
