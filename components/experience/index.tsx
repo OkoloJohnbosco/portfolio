@@ -15,7 +15,7 @@ function Experience() {
   const value = useColorModeValue("gray.100", "rgba(0,0,0,0.3)");
   return (
     <Stack pt={20}>
-      <Section>
+      <Section id="experience">
         <Heading
           textAlign="center"
           pb={2}

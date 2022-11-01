@@ -20,7 +20,7 @@ function Header() {
   const textColor = useColorModeValue("gray.700", "gray.300");
 
   return (
-    <Stack py={10} pt={16}>
+    <Stack py={10} pt={16} id="home">
       <Section position="relative" minH="calc(100vh - 180px)">
         <Socials />
         <SimpleGrid

@@ -22,10 +22,18 @@ function Navbar() {
             <Text>Johnbosc</Text>
           </Stack>
           <HStack spacing={4}>
-            <Text>Home</Text>
-            <Text>Works</Text>
-            <Text>Service</Text>
-            <Text>About me</Text>
+            <a href="#home">
+              <Text>Home</Text>
+            </a>
+            <a href="#experience">
+              <Text>Works</Text>
+            </a>
+            <a href="#experience">
+              <Text>Service</Text>
+            </a>
+            <a href="#contact-us">
+              <Text>Contact me</Text>
+            </a>
           </HStack>
 
           <IconButton
