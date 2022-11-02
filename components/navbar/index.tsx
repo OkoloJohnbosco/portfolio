@@ -40,7 +40,7 @@ function Navbar() {
             <a href="#experience">
               <Text>Works</Text>
             </a>
-            <a href="#experience">
+            <a href="#project">
               <Text>Projects</Text>
             </a>
             <a href="#contact-us">

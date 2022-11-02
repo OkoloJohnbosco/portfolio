@@ -2,6 +2,7 @@ import { Heading, Stack } from "@chakra-ui/react";
 import Head from "next/head";
 import Contact from "../components/contact";
 import Experience from "../components/experience";
+import Projects from "../components/projects";
 import Header from "../components/header";
 import Navbar from "../components/navbar";
 import Tabs from "../components/tabs";
@@ -18,6 +19,7 @@ export default function Home() {
         <Navbar />
         <Header />
         <Experience />
+        <Projects />
         <Contact />
         {/* <Stack w="full" alignItems="center">
           <Tabs />

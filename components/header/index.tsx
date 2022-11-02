@@ -10,6 +10,8 @@ import {
 } from "@chakra-ui/react";
 import Section from "../section";
 import Socials from "../socials";
+import Image from "next/image";
+import profileImg from "../../public/images/phone.png";
 
 function Header() {
   const bgColor = useColorModeValue("gray.100", "rgba(0,0,0,0.3)");
@@ -25,35 +27,17 @@ function Header() {
           alignItems="center"
         >
           <Stack position="relative">
-            <Stack spacing={3}>
-              <Stack
-                spacing={0}
-                rounded="8"
-                p={4}
-                pl={6}
-                bg={bgColor}
-                color={textColor}
-                position="absolute"
-                top={{ base: -10, lg: -20 }}
-                shadow="sm"
-                right={0}
-              >
+            <Stack spacing={6}>
+              <Stack spacing={0} rounded="8" color={textColor}>
                 <Heading fontSize="lg">Hello, I'm</Heading>
                 <Heading fontSize="3rem">Johnbosco</Heading>
               </Stack>
               <Stack>
-                <Text
-                  mt={20}
-                  rounded="8"
-                  p={4}
-                  pl={6}
-                  bg={bgColor}
-                  color={textColor}
-                  maxW="400px"
-                >
-                  Frontend Software Developer with 4+ years of experience
-                  building products. I love collaboration and making helpful
-                  products that connects prople.
+                <Text mt={2} color={textColor} maxW="400px">
+                  A Frontend Software Developer with 4+ years of experience
+                  building products that are accessible and user-friendly to
+                  users. I love collaboration and making helpful products that
+                  connects people.
                 </Text>
               </Stack>
               <Stack>
@@ -87,10 +71,11 @@ function Header() {
               top={10}
             />
 
-            <Stack h="400px"></Stack>
-            {/* <Box textAlign="center" position="relative" top={10} h="300px"> */}
-            {/* <Image src={profileImg} alt="" placeholder="blur" /> */}
-            {/* </Box> */}
+            <Stack h="400px">
+              <Box textAlign="center" maxW="500px">
+                <Image src={profileImg} alt="" placeholder="blur" />
+              </Box>
+            </Stack>
           </Stack>
         </SimpleGrid>
       </Section>
