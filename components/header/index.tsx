@@ -41,19 +41,21 @@ function Header() {
                 </Text>
               </Stack>
               <Stack>
-                <Button
-                  variant="ghost"
-                  rounded={0}
-                  p={0}
-                  w="min-content"
-                  h="min-content"
-                  colorScheme="teal"
-                  pb={2}
-                  borderBottom="2px solid"
-                  borderColor="green.600"
-                >
-                  LET'S CHAT!
-                </Button>
+                <a href="mailto:chukwuemekaokolo233@gmail.com">
+                  <Button
+                    variant="ghost"
+                    rounded={0}
+                    p={0}
+                    w="min-content"
+                    h="min-content"
+                    colorScheme="teal"
+                    pb={2}
+                    borderBottom="2px solid"
+                    borderColor="green.600"
+                  >
+                    LET'S CHAT!
+                  </Button>
+                </a>
               </Stack>
             </Stack>
           </Stack>

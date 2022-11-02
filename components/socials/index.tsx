@@ -28,7 +28,10 @@ function Socials() {
         </a>
       </Tooltip>
       <Tooltip hasArrow placement="top" py={2} px={4} rounded={4}>
-        <a href="ww.linkedin.com/in/johnbosco-okolo-733434189" target="_blank">
+        <a
+          href="https://linkedin.com/in/johnbosco-okolo-733434189"
+          target="_blank"
+        >
           <IconButton
             size="sm"
             variant="outline"

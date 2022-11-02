@@ -33,7 +33,7 @@ function Navbar() {
           <Box maxW="80px" bg={fake} h="50px">
             <Image src={logoImg} alt="" placeholder="blur" />
           </Box>
-          <HStack spacing={4}>
+          <HStack spacing={4} display={{ base: "none", sm: "flex" }}>
             <a href="#home">
               <Text>Home</Text>
             </a>
