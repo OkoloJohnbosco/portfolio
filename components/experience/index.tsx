@@ -1,14 +1,21 @@
 import React from "react";
-import { Box, Stack, SimpleGrid, Heading } from "@chakra-ui/react";
+import {
+  Box,
+  Stack,
+  SimpleGrid,
+  Heading,
+  useColorModeValue,
+} from "@chakra-ui/react";
 import TimeLine from "../timeline";
 import Section from "../section";
 import images from "../../constant/images";
 import Image from "next/image";
 
 function Experience() {
+  const value = useColorModeValue("gray.100", "rgba(0,0,0,0.3)");
   return (
     <Stack pt={20}>
-      <Section>
+      <Section id="experience">
         <Heading
           textAlign="center"
           pb={2}
@@ -26,12 +33,7 @@ function Experience() {
           columnGap={10}
           py={5}
         >
-          <Stack
-            // mx={{ base: "auto", md: "initial" }}
-            ml={{ base: "initial", md: "auto" }}
-            w="full"
-            maxW="450px"
-          >
+          <Stack mx={{ base: "auto", md: "auto 0" }} w="full" maxW="450px">
             <SimpleGrid
               columns={4}
               columnGap={6}
@@ -55,7 +57,7 @@ function Experience() {
                 <Box
                   h={20}
                   w={20}
-                  bg="rgba(0,0,0,.3)"
+                  bg={value}
                   // bg="green.100"
                   p={5}
                   rounded="full"
