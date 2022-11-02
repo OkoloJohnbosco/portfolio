@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <Head>
         <title>Jaybee Portfolio</title>
-        <meta name="description" content="Bunchpay blog" />
+        <meta name="description" content="johnbosco portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Stack>
