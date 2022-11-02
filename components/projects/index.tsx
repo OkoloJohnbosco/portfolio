@@ -1,14 +1,10 @@
 import React from "react";
-import {
-  Stack,
-  SimpleGrid,
-  Heading,
-  useColorModeValue,
-} from "@chakra-ui/react";
-import TimeLine from "../timeline";
+import { Stack, Heading, useColorModeValue } from "@chakra-ui/react";
 import Section from "../section";
-import Image from "next/image";
 import Project from "../project";
+import project_1Img from "../../public/images/project-1.png";
+import project_2Img from "../../public/images/project-2.png";
+import project_3Img from "../../public/images/project-3.png";
 
 function Projects() {
   const value = useColorModeValue("gray.100", "rgba(0,0,0,0.3)");
@@ -27,7 +23,9 @@ function Projects() {
           Projects
         </Heading>
         <Stack rowGap={16} columnGap={10} py={5}>
-          <Project />
+          <Project img={project_1Img} />
+          <Project img={project_2Img} />
+          <Project img={project_3Img} />
         </Stack>
       </Section>
     </Stack>
