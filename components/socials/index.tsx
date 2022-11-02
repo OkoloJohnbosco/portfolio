@@ -15,7 +15,7 @@ function Socials() {
       zIndex="docked"
     >
       <Tooltip hasArrow placement="top" py={2} px={4} rounded={4}>
-        <a href="" target="_blank">
+        <a href="https://twitter.com/JohnboscoOkolo" target="_blank">
           <IconButton
             size="sm"
             colorScheme="teal"
@@ -27,9 +27,8 @@ function Socials() {
           </IconButton>
         </a>
       </Tooltip>
-
       <Tooltip hasArrow placement="top" py={2} px={4} rounded={4}>
-        <a href="" target="_blank">
+        <a href="ww.linkedin.com/in/johnbosco-okolo-733434189" target="_blank">
           <IconButton
             size="sm"
             variant="outline"
@@ -43,7 +42,7 @@ function Socials() {
       </Tooltip>
 
       <Tooltip hasArrow placement="top" py={2} px={4} rounded={4}>
-        <a href="" target="_blank">
+        <a href="https://github.com/OkoloJohnbosco" target="_blank">
           <IconButton
             size="sm"
             variant="outline"
