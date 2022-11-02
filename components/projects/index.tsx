@@ -22,10 +22,25 @@ function Projects() {
         >
           Projects
         </Heading>
-        <Stack rowGap={16} columnGap={10} py={5}>
-          <Project img={project_1Img} />
-          <Project img={project_2Img} />
-          <Project img={project_3Img} />
+        <Stack spacing={16} py={5}>
+          <Project
+            title="Teenah Stores"
+            img={project_1Img}
+            href="https://teenahstores.com/"
+            description="Teenah is a mini e-commerce site that I built for a friend of mine that sells clothes, it has all the functionality of a typical commmerce site from cart functionality to checkout. It was built using React, Material-Ui for the UI library, Redux for state management and React-query for managing server side state"
+          />
+          <Project
+            img={project_2Img}
+            title="BunchPay"
+            reverse
+            href="https://bunchpay.ng/"
+            description="BunchPay is a fintech startup that helps with local transaction, payment of utility bills, tv cable subscription and for purchase of airtime and data. The company was started by a group of friends and I. The frontend was built by me using Nextjs because of it's speed and other out of the box features like server side rendering, Chakra-UI, React query for server side state and Context API for local states"
+          />
+          <Project
+            title="Creathors"
+            img={project_3Img}
+            href="https://creathor.africa/"
+          />
         </Stack>
       </Section>
     </Stack>
