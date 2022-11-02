@@ -5,8 +5,8 @@ import { colors, semanticTokens, fonts, fontSizes } from "./config";
 
 // DarkMode config
 const config: ThemeConfig = {
-  initialColorMode: "light",
-  useSystemColorMode: false,
+  initialColorMode: "dark",
+  useSystemColorMode: true,
 };
 
 // Global Styles
